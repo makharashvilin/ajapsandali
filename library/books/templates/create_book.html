@@ -1,0 +1,7 @@
+<h3>create book</h3>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">save</button>
+</form>
+<a href="{% url 'home_books' %}">back to home page</a>

@@ -1,0 +1,7 @@
+<h3>update book - {{ book.title }}</h3>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">update</button>
+</form>
+<a href="{% url 'home_books' %}">homepage</a>

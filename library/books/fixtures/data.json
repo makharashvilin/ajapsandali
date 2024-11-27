@@ -1,0 +1,77 @@
+[
+  {
+    "model": "books.category",
+    "pk": 1,
+    "fields": {
+      "name": "Fiction"
+    }
+  },
+  {
+    "model": "books.category",
+    "pk": 2,
+    "fields": {
+      "name": "Non-Fiction"
+    }
+  },
+  {
+    "model": "books.category",
+    "pk": 3,
+    "fields": {
+      "name": "Science"
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 1,
+    "fields": {
+      "name": "Jane Austen"
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 2,
+    "fields": {
+      "name": "George Orwell"
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 3,
+    "fields": {
+      "name": "Albert Einstein"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "title": "Pride and Prejudice",
+      "description": "A classic novel of manners.",
+      "author": 1,
+      "rating": 7,
+      "category": [1]
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "title": "1984",
+      "description": "A dystopian social science fiction novel.",
+      "author": 2,
+      "rating": 4,
+      "category": [1, 2]
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "title": "Relativity: The Special and the General Theory",
+      "description": "An exposition of Einstein's theories of relativity.",
+      "author": 3,
+      "rating": 8,
+      "category": [3]
+    }
+  }
+]
